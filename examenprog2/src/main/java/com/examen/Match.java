@@ -8,13 +8,10 @@ import lombok.Setter;
 @Setter
 @Getter
 public abstract class Match {
-    protected String id;
+    protected String id, endroit;
     protected LocalDate date;
-    protected String endroit;
-    protected Combattant combattant1;
-    protected Combattant combattant2;
-    protected int points1;
-    protected int points2;
+    protected Combattant combattant1, combattant2;
+    protected int points1, points2;
 
     public Match(String id, LocalDate date, String endroit, Combattant c1, Combattant c2) {
         this.id = id;

@@ -3,17 +3,15 @@ package com.examen;
 import java.util.ArrayList;
 import java.util.List;
 
+import lombok.Getter;
+
+@Getter
 public class Combattant {
-    private String id;
-    private String nom;
-    private String prenom;
-    private String nomDeCombattant;
+    private String id, nom, prenom, nomDeCombattant;
     private double poids;
     private List<String> titres;
 
-    private int victoires;
-    private int defaites;
-    private int egalites;
+    private int victoires, defaites, egalites;
 
     public Combattant(String id, String nom, String prenom, String nomDeCombattant, double poids) {
         this.id = id;
@@ -41,42 +39,6 @@ public class Combattant {
 
     public void ajouterTitre(String titre) {
         titres.add(titre);
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public String getNom() {
-        return nom;
-    }
-
-    public String getPrenom() {
-        return prenom;
-    }
-
-    public String getNomDeCombattant() {
-        return nomDeCombattant;
-    }
-
-    public double getPoids() {
-        return poids;
-    }
-
-    public List<String> getTitres() {
-        return titres;
-    }
-
-    public int getVictoires() {
-        return victoires;
-    }
-
-    public int getDefaites() {
-        return defaites;
-    }
-
-    public int getEgalites() {
-        return egalites;
     }
 
     @Override

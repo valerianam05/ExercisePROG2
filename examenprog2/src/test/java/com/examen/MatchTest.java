@@ -7,8 +7,7 @@ import java.time.LocalDate;
 
 public class MatchTest {
 
-    private Combattant c1;
-    private Combattant c2;
+    private Combattant c1, c2;
     @BeforeEach
     public void setup() {
         c1 = new Combattant("1", "Valéria", "Nomentsoa", "Predator", 115.0);
