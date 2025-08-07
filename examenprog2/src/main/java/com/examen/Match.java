@@ -2,6 +2,11 @@ package com.examen;
 
 import java.time.LocalDate;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
 public abstract class Match {
     protected String id;
     protected LocalDate date;
@@ -23,16 +28,7 @@ public abstract class Match {
         this.points1 = p1;
         this.points2 = p2;
     }
-
     public abstract void terminer(); 
-
-    public Combattant getCombattant1() {
-        return combattant1;
-    }
-
-    public Combattant getCombattant2() {
-        return combattant2;
-    }
 
     @Override
     public String toString() {
