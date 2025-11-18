@@ -13,8 +13,8 @@ public class ExerciseTest {
     private Etudiant etudiantA;
     private Etudiant etudiantB;
     private Cours prog2;
-    private Examen exam1; // Coefficient 2
-    private Examen exam2; // Coefficient 3
+    private Examen exam1;
+    private Examen exam2;
     private Instant t0_debut;
     private Instant t1_changement;
     private Instant t2_final;
